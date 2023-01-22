@@ -7,7 +7,7 @@ const Contacto = () => {
 
     const sendEmail = (e) =>{
         e.preventDefault();
-        emailjs.sendForm('service_4gyem64', 'template_8bc37ja', e.target, 'AO5ZwI17kAU0TdRKu')
+        emailjs.sendForm(process.env.REACT_APP_SERVICE, process.env.REACT_APP_TEMPLATE, e.target, process.env.REACT_APP_EMAILJSKEY)
     }
     
     return (
