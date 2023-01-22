@@ -3,7 +3,6 @@ import {allMeals} from '../functions/connection'
 import Form from 'react-bootstrap/Form';
 import '../components/Index.css'
 
-
 const Index = () => {
 
   const [meals, setMeals] = useState(null);
