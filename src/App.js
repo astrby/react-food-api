@@ -11,16 +11,18 @@ function App() {
   return (
     <div className="App">
       <NB/>
-      <div className='body'>
-        <BrowserRouter>
-          <Routes>
-            <Route path='/' element={<Index></Index>}></Route>
-            <Route path='/meal/:idMeal' element={<Meal></Meal>}></Route>
-            <Route path='/contacto' element={<Contacto></Contacto>}></Route>
-          </Routes>
-        </BrowserRouter>
+      <div className='content-wrap'>
+        <div className='body'>
+          <BrowserRouter>
+            <Routes>
+              <Route path='/' element={<Index></Index>}></Route>
+              <Route path='/meal/:idMeal' element={<Meal></Meal>}></Route>
+              <Route path='/contacto' element={<Contacto></Contacto>}></Route>
+            </Routes>
+          </BrowserRouter>
+        </div>
+        <Footer className='footer'/>
       </div>
-      <Footer className='footer'/>
     </div>
   );
 }
